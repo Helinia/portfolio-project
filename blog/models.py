@@ -13,8 +13,8 @@ class Blog(models.Model):
     image = models.ImageField(upload_to = 'images/')
 
 
-
-#add the blog app to the settings
-#create a migration in terminal
-#migrate
-#add to admin
+#Q: what is the next steps to add the model so that we can use it?
+#A: 1.add the blog app to the settings
+#2.create a migration in terminal
+#3.migrate
+#4.add to admin
