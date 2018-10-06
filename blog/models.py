@@ -11,6 +11,14 @@ class Blog(models.Model):
     blog_body = models.TextField()
     #image
     image = models.ImageField(upload_to = 'images/')
+    def summary(self):
+        return self.blog_body[:100]
+
+    def pub_date_pretty(self):
+        return self.pub_date.strftime('%b %e %Y')
+
+    def __str__(self):
+        return self.title
 
 
 #Q: what is the next steps to add the model so that we can use it?
